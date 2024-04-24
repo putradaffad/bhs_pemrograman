@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 void tambah(float angka1, float angka2) {
@@ -53,8 +54,8 @@ int main() {
         cout << "Menu Operasi Matematika" << endl;
         cout << "1. Tambah" << endl;
         cout << "2. Kurang" << endl;
-        cout << "3. Bagi" << endl;
-        cout << "4. Kali" << endl;
+        cout << "3. Kali" << endl;
+        cout << "4. Bagi" << endl;
         cout << "5. Keluar" << endl;
         cout << "Pilih operasi (1-5): ";
         cin >> pilihan;
@@ -67,10 +68,10 @@ int main() {
                 kurang(a, b);
                 break;
             case '3':
-                bagi(a, b);
+                kali(a, b);
                 break;
             case '4':
-                kali(a, b);
+                bagi(a, b);
                 break;
             case '5':
                 cout << "Terima kasih telah menggunakan program ini." << endl;
