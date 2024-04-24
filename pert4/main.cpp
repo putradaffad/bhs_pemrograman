@@ -1,62 +1,86 @@
 #include <iostream>
 using namespace std;
 
-void tambah(int angka1, int angka2){
-    cout << "TAMBAH : " << angka1 + angka2 << endl;
+void tambah(float angka1, float angka2) {
+    float hasil;
+    cout << "Masukkan angka pertama: ";
+    cin >> angka1;
+    cout << "Masukkan angka kedua: ";
+    cin >> angka2;
+    hasil = angka1 + angka2;
+    cout << "Hasil penjumlahan: " << hasil << endl;
 }
 
-void kurang(int angka1, int angka2){
-    cout << "KURANG : " << angka1 - angka2 << endl;
+void kurang(float angka1, float angka2) {
+    float hasil;
+    cout << "Masukkan angka pertama: ";
+    cin >> angka1;
+    cout << "Masukkan angka kedua: ";
+    cin >> angka2;
+    hasil = angka1 - angka2;
+    cout << "Hasil pengurangan: " << hasil << endl;
 }
 
-void kali(int angka1, int angka2){
-    cout << "KALI : " << angka1 * angka2 << endl;
+void bagi(float angka1, float angka2) {
+    float hasil;
+    cout << "Masukkan angka pembilang: ";
+    cin >> angka1;
+    cout << "Masukkan angka penyebut: ";
+    cin >> angka2;
+    if (angka2 != 0) {
+        hasil = angka1 / angka2;
+        cout << "Hasil pembagian: " << hasil << endl;
+    } else {
+        cout << "Error: Penyebut tidak boleh nol." << endl;
+    }
 }
 
-void bagi(int angka1, int angka2){
-    cout << "BAGI : " << angka1 / angka2 << endl;
+void kali(float angka1, float angka2) {
+    float hasil;
+    cout << "Masukkan angka pertama: ";
+    cin >> angka1;
+    cout << "Masukkan angka kedua: ";
+    cin >> angka2;
+    hasil = angka1 * angka2;
+    cout << "Hasil perkalian: " << hasil << endl;
 }
 
-int main(){
-    do{
-        switch (pilih){
+int main() {
+    char pilihan;
+    float a, b;
+
+    do {
+        cout << "Menu Operasi Matematika" << endl;
+        cout << "1. Tambah" << endl;
+        cout << "2. Kurang" << endl;
+        cout << "3. Bagi" << endl;
+        cout << "4. Kali" << endl;
+        cout << "5. Keluar" << endl;
+        cout << "Pilih operasi (1-5): ";
+        cin >> pilihan;
+
+        switch (pilihan) {
             case '1':
-                cout << "Masukkan Angka 1 : ";
-                cin >> angka1;
-                cout << "Masukkan Angka 2 : ";
-                cin >> angka2;
-                tambah(angka1, angka2);
+                tambah(a, b);
                 break;
             case '2':
-                cout << "Masukkan Angka 1 : ";
-                cin >> angka1;
-                cout << "Masukkan Angka 2 : ";
-                cin >> angka2;
-                kurang(angka1, angka2);
+                kurang(a, b);
                 break;
             case '3':
-                cout << "Masukkan Angka 1 : ";
-                cin >> angka1;
-                cout << "Masukkan Angka 2 : ";
-                cin >> angka2;
-                kali(angka1, angka2);
+                bagi(a, b);
                 break;
             case '4':
-                cout << "Masukkan Angka 1 : ";
-                cin >> angka1;
-                cout << "Masukkan Angka 2 : ";
-                cin >> angka2;
-                bagi(angka1, angka2);
+                kali(a, b);
                 break;
-            case '5' :
-                cout << "EXIT" << endl;
+            case '5':
+                cout << "Terima kasih telah menggunakan program ini." << endl;
                 break;
-            default :
-                cout << "Pilihan Salah!" << endl;
-
+            default:
+                cout << "Pilihan tidak valid. Silakan pilih antara 1-5." << endl;
+                break;
         }
 
-    }while(pilih != '5');
+    } while (pilihan != '5');
+
     return 0;
 }
-    
