@@ -10,7 +10,7 @@ int main() {
     int a = 1;
     //apa bedanya int diluar for dengan int didalam for??
 
-    for(int a=1; a<=5 a++){
+    for(int a=1; a<=5; a++){
         cout << a << endl;
     }
 
