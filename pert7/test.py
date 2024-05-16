@@ -6,8 +6,8 @@ fig = px.line(
     y = np.array([0, 250]),
     title = "sample dashboard", height=325
 )
-    app = Dash()
-    app.layout = html.Div([
+app = Dash()
+app.layout = html.Div([
     dcc.Graph(figure=fig)
 ])
 app.run_server(debug=True, use_reloader=False)
