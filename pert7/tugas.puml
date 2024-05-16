@@ -1,0 +1,49 @@
+@startuml
+
+start
+:Display Main Menu;
+:1. Makanan;
+:2. Minuman;
+:3. Kembali;
+if (Choose Makanan) then (yes)
+    :Display Makanan Menu;
+    :1. Pecel Lele (15000);
+    :2. Nasi Goreng (17000);
+    :3. Kembali;
+    if (Choose Pecel Lele) then (yes)
+        :Input Jumlah Pesanan;
+        :Calculate Total Harga;
+        :Display Total Harga;
+    else (no)
+        if (Choose Nasi Goreng) then (yes)
+            :Input Jumlah Pesanan;
+            :Calculate Total Harga;
+            :Display Total Harga;
+        endif
+    endif
+    :Display Main Menu;
+else (no)
+    if (Choose Minuman) then (yes)
+        :Display Minuman Menu;
+        :1. Es Teh (5000);
+        :2. Es Jeruk (7000);
+        :3. Kembali;
+        if (Choose Es Teh) then (yes)
+            :Input Jumlah Pesanan;
+            :Calculate Total Harga;
+            :Display Total Harga;
+        else (no)
+            if (Choose Es Jeruk) then (yes)
+                :Input Jumlah Pesanan;
+                :Calculate Total Harga;
+                :Display Total Harga;
+            endif
+        endif
+        :Display Main Menu;
+    else (no)
+        :Exit Program;
+    endif
+endif
+
+stop
+@enduml
