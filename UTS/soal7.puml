@@ -1,0 +1,47 @@
+@startuml
+
+start
+
+:Menampilkan menu utama;
+:Menampilkan "KALKULATOR SEDERHANA";
+:Menampilkan "1. Pertambahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian\nPilih 1-4 : ";
+:Input pilihan;
+
+if (pilihan == 1) then (yes)
+  :Menampilkan "PERTAMBAHAN";
+  :Input angka pertama (a);
+  :Input angka kedua (b);
+  :hasil = a + b;
+  :Menampilkan hasil pertambahan;
+else (no)
+  if (pilihan == 2) then (yes)
+    :Menampilkan "PENGURANGAN";
+    :Input angka pertama (a);
+    :Input angka kedua (b);
+    :hasil = a - b;
+    :Menampilkan hasil pengurangan;
+  else (no)
+    if (pilihan == 3) then (yes)
+      :Menampilkan "PERKALIAN";
+      :Input angka pertama (a);
+      :Input angka kedua (b);
+      :hasil = a * b;
+      :Menampilkan hasil perkalian;
+    else (no)
+      if (pilihan == 4) then (yes)
+        :Menampilkan "PEMBAGIAN";
+        :Input angka pertama (a);
+        :Input angka kedua (b);
+        :hasil = a / b;
+        :Menampilkan hasil pembagian;
+      else (no)
+        :Menampilkan "Pilihan Tidak Valid";
+      endif
+    endif
+  endif
+endif
+
+:Menampilkan "\n\nTerimakasi telah menggunakan program ini!";
+stop
+
+@enduml
