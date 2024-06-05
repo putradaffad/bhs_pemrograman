@@ -1,0 +1,69 @@
+JAWABAN UTS
+
+1. paradigma pemrograman adalah cara berbeda yang kita gunakan untuk menghadapi masalah pemrograman, dan mengatur kode kita. Paradigma imperatif, prosedural, fungsional, deklaratif, dan berorientasi objek merupakan beberapa paradigma yang paling populer dan banyak digunakan saat ini. Setiap paradigma membawa cara berpikir dan metodologi yang berbeda untuk pemecahan masalah dalam pemrograman.
+
+2. 
+
+3.
+
+4. #include <iostream>
+
+using namespace std;
+
+int main() {
+    int tahunLahir;
+    int tahunSekarang;
+    int umur;
+
+    // Meminta input dari pengguna
+    cout << "Masukkan tahun lahir Anda: ";
+    cin >> tahunLahir;
+    cout << "Masukkan tahun saat ini: ";
+    cin >> tahunSekarang;
+
+    // Menghitung umur
+    umur = tahunSekarang - tahunLahir;
+
+    // Menampilkan hasil
+    cout << "Berarti Usia Kalian Sekarang adalah " << umur << " Tahun" << endl;
+
+    return 0;
+}
+
+5. #include <iostream>
+
+using namespace std;
+
+int main() {
+    double angkaPertama, angkaKedua;
+
+    // Meminta input dari pengguna
+    cout << "Masukkan Angka Pertama : ";
+    cin >> angkaPertama;
+    cout << "Masukkan Angka Kedua : ";
+    cin >> angkaKedua;
+
+    // Melakukan operasi matematika
+    double penjumlahan = angkaPertama + angkaKedua;
+    double pengurangan = angkaPertama - angkaKedua;
+    double perkalian = angkaPertama * angkaKedua;
+    double pembagian;
+
+    // Mengecek pembagian dengan nol
+    if (angkaKedua != 0) {
+        pembagian = angkaPertama / angkaKedua;
+    } else {
+        cout << "Kesalahan: Pembagian dengan nol tidak diperbolehkan." << endl;
+        return 1; // Mengakhiri program dengan kode kesalahan
+    }
+
+    // Menampilkan hasil
+    cout << "Hasil penjumlahan : " << penjumlahan << endl;
+    cout << "Hasil pengurangan : " << pengurangan << endl;
+    cout << "Hasil perkalian : " << perkalian << endl;
+    cout << "Hasil pembagian : " << pembagian << endl;
+
+    return 0;
+}
+
+6. 
