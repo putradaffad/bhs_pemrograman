@@ -1,0 +1,60 @@
+@startuml
+actor User
+actor PenyediaKendaraan
+
+User -> Aplikasi : Masukkan nama
+User -> Aplikasi : Lihat daftar kendaraan
+Aplikasi -> PenyediaKendaraan : Tampilkan daftar kendaraan
+PenyediaKendaraan -> Aplikasi : Daftar kendaraan
+Aplikasi -> User : Tampilkan daftar kendaraan
+
+User -> Aplikasi : Pilih kendaraan
+Aplikasi -> PenyediaKendaraan : Ambil detail kendaraan
+PenyediaKendaraan -> Aplikasi : Detail kendaraan
+Aplikasi -> User : Tampilkan detail kendaraan
+User -> Aplikasi : Tambahkan kendaraan ke keranjang
+Aplikasi -> User : Konfirmasi penambahan ke keranjang
+
+User -> Aplikasi : Tampilkan keranjang
+Aplikasi -> User : Tampilkan keranjang
+User -> Aplikasi : Lakukan pembayaran
+Aplikasi -> User : Konfirmasi pembayaran
+
+User -> Aplikasi : Selesai memilih kendaraan
+Aplikasi -> PenyediaKendaraan : Notifikasi penyewaan
+PenyediaKendaraan -> Aplikasi : Konfirmasi pengiriman
+Aplikasi -> User : Kendaraan sedang disiapkan
+Aplikasi -> User : Kendaraan dalam pengiriman
+Aplikasi -> User : Kendaraan telah diterima
+
+@enduml
+@startuml
+actor User
+actor PenyediaKendaraan
+
+User -> Aplikasi : Masukkan nama
+User -> Aplikasi : Lihat daftar kendaraan
+Aplikasi -> PenyediaKendaraan : Tampilkan daftar kendaraan
+PenyediaKendaraan -> Aplikasi : Daftar kendaraan
+Aplikasi -> User : Tampilkan daftar kendaraan
+
+User -> Aplikasi : Pilih kendaraan
+Aplikasi -> PenyediaKendaraan : Ambil detail kendaraan
+PenyediaKendaraan -> Aplikasi : Detail kendaraan
+Aplikasi -> User : Tampilkan detail kendaraan
+User -> Aplikasi : Tambahkan kendaraan ke keranjang
+Aplikasi -> User : Konfirmasi penambahan ke keranjang
+
+User -> Aplikasi : Tampilkan keranjang
+Aplikasi -> User : Tampilkan keranjang
+User -> Aplikasi : Lakukan pembayaran
+Aplikasi -> User : Konfirmasi pembayaran
+
+User -> Aplikasi : Selesai memilih kendaraan
+Aplikasi -> PenyediaKendaraan : Notifikasi penyewaan
+PenyediaKendaraan -> Aplikasi : Konfirmasi pengiriman
+Aplikasi -> User : Kendaraan sedang disiapkan
+Aplikasi -> User : Kendaraan dalam pengiriman
+Aplikasi -> User : Kendaraan telah diterima
+
+@enduml
