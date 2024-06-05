@@ -1,5 +1,4 @@
-1. Business Understanding terhadap Rencana/Ide Penyewaan Kendaraan
-Ide Bisnis: Aplikasi Penyewaan Kendaraan
+# 1. Business Understanding terhadap Rencana/Ide Penyewaan Kendaraan
 
 # Deskripsi Singkat:
 Aplikasi ini dirancang untuk memudahkan pengguna dalam menyewa kendaraan seperti mobil dan motor. Pengguna dapat melihat daftar kendaraan yang tersedia, memilih kendaraan yang ingin disewa, menambahkannya ke keranjang, dan melakukan pembayaran secara online. Penyedia kendaraan dapat menambahkan kendaraan mereka ke dalam sistem, dan aplikasi akan mengelola proses penyewaan dari pemilihan hingga pengiriman.
