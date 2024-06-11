@@ -1,0 +1,35 @@
+@startuml
+
+class Kendaraan {
+    -string nama
+    -double hargaSewa
+    +Kendaraan(string nama, double hargaSewa)
+}
+
+class PenyediaKendaraan {
+    -string nama
+    -vector<Kendaraan> daftarKendaraan
+    +PenyediaKendaraan(string nama)
+    +void tambahKendaraan(Kendaraan kendaraan)
+    +void tampilkanDaftarKendaraan()
+    +Kendaraan getKendaraan(int index)
+}
+
+class User {
+    -string nama
+    -vector<Kendaraan> keranjang
+    +User(string nama)
+    +void tambahkanKeKeranjang(Kendaraan kendaraan)
+    +void tampilkanKeranjang()
+    +void lakukanPembayaran()
+}
+
+class Main {
+}
+
+Kendaraan "1" -- "0..*" PenyediaKendaraan : daftarKendaraan
+Kendaraan "1" -- "0..*" User : keranjang
+PenyediaKendaraan "1" -- "1" Main
+User "1" -- "1" Main
+
+@enduml
