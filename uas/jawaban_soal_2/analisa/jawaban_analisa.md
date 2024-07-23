@@ -1,6 +1,10 @@
-Exception handling adalah mekanisme dalam pemrograman yang digunakan untuk menangani kesalahan (exceptions) yang mungkin terjadi saat program berjalan. Dalam Python, exception handling dilakukan menggunakan blok try, except, else, dan finally.
+Exception handling adalah mekanisme dalam pemrograman yang digunakan untuk menangani kesalahan atau kondisi tak terduga yang terjadi selama eksekusi program. Dengan exception handling, program dapat menangani kesalahan tersebut dengan cara yang lebih terstruktur, sehingga tidak menyebabkan program berhenti secara tiba-tiba.
 
-try: Blok kode yang mungkin menyebabkan exception ditempatkan di dalam blok try.
-except: Blok kode yang dijalankan jika exception terjadi dalam blok try.
-else: Blok kode yang dijalankan jika tidak ada exception yang terjadi dalam blok try.
-finally: Blok kode yang akan dijalankan tanpa peduli apakah exception terjadi atau tidak, sering digunakan untuk membersihkan sumber daya.
+Pada bahasa pemrograman seperti Python, exception handling biasanya menggunakan blok try, except, else, dan finally.
+
+Berikut penjelasan singkat dari masing-masing blok:
+
+try     : Bagian kode yang mungkin menghasilkan kesalahan ditempatkan di dalam blok ini.
+except  : Bagian kode yang menangani kesalahan ditempatkan di dalam blok ini. Blok ini akan dieksekusi jika kesalahan yang ditentukan terjadi dalam blok try.
+else    : Bagian kode di dalam blok ini akan dieksekusi jika tidak ada kesalahan yang terjadi dalam blok try.
+finally : Bagian kode di dalam blok ini akan selalu dieksekusi, baik ada kesalahan atau tidak. Biasanya digunakan untuk membersihkan sumber daya atau melakukan tindakan akhir.

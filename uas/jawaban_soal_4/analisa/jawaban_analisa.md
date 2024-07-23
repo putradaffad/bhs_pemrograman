@@ -5,8 +5,8 @@ Berikut ini adalah contoh menggunakan SQLite dan sqlite3 untuk berkomunikasi den
 Menggunakan SQLite dengan sqlite3
 SQLite adalah database yang bersifat self-contained, serverless, dan zero-configuration, yang sangat cocok untuk aplikasi yang membutuhkan database kecil atau menengah.
 
-Langkah-langkah
-1.Membuat Koneksi ke Database: Menggunakan sqlite3.connect.
-2.Membuat Cursor: Untuk mengeksekusi perintah SQL.
-3.Eksekusi Perintah SQL: Seperti membuat tabel, memasukkan data, mengambil data, dll.
-4.Menutup Koneksi: Setelah operasi selesai.
+Langkah-langkah   
+1. Membuat Koneksi ke Database : Menggunakan sqlite3.connect.   
+2. Membuat Cursor : Untuk mengeksekusi perintah SQL.  
+3. Eksekusi Perintah SQL : Seperti membuat tabel, memasukkan data, mengambil data, dll.  
+4. Menutup Koneksi : Setelah operasi selesai.

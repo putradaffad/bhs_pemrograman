@@ -1,3 +1,13 @@
-Function adalah blok kode yang terorganisir dan dapat digunakan kembali yang digunakan untuk melakukan suatu tindakan. Dalam Python, function didefinisikan menggunakan kata kunci def diikuti oleh nama function dan tanda kurung yang berisi parameter (jika ada). Function dapat dipanggil kapan saja dan sebanyak yang diperlukan dalam program.
+## Function di Python
+Pengertian
+Function adalah blok kode yang dirancang untuk melakukan tugas tertentu. Function memungkinkan kita untuk mengorganisir kode sehingga lebih modular dan dapat digunakan kembali.
 
-Recursive adalah teknik pemrograman di mana sebuah function memanggil dirinya sendiri untuk menyelesaikan masalah yang lebih kecil dari masalah aslinya. Rekursi biasanya digunakan untuk memecahkan masalah yang dapat dipecah menjadi sub-masalah yang lebih kecil dengan pola yang sama.
+Cara Membuat Function
+Function didefinisikan menggunakan kata kunci def diikuti oleh nama function, tanda kurung, dan kemudian blok kode yang diindentasi.
+
+## Recursive di Python
+Pengertian
+Recursive adalah function yang memanggil dirinya sendiri selama proses eksekusi. Recursive umumnya digunakan untuk menyelesaikan masalah yang dapat dipecah menjadi sub-masalah yang lebih kecil dan serupa dengan masalah asli.
+
+Contoh Recursive 
+Contoh klasik dari recursive adalah perhitungan faktorial. Faktorial dari sebuah bilangan n (ditulis sebagai n!) adalah hasil perkalian semua bilangan bulat positif dari 1 hingga n.
